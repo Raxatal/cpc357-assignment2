@@ -155,9 +155,19 @@ sudo systemctl enable mongod
 sudo systemctl start mongod
 
 # Clone repository and install Python dependencies
-git clone &lt;repository-url&gt;
-cd &lt;repository-folder&gt;
+git clone https://github.com/Raxatal/cpc357-assignment2.git
+cd cpc357-assignment2
 pip3 install -r requirements.txt
+
+# Setup MongoDB users
+python3 setup_mongo.py
+sudo nano /etc/mongod.conf
+
+# Uncomment the 'security:' line
+# Add 'authorization: enabled' under security
+
+# Restart MongoDB
+sudo systemctl restart mongod
 
 # Run system components in separate terminals
 python3 app.py
