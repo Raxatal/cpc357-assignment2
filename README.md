@@ -47,7 +47,7 @@ cloud processing, data storage, and application layers.
 </p>
 
 <p>
-<b>[Figure Placeholder]</b><br>
+    
 <i>Figure 1: High-level system architecture diagram</i>
 </p>
 
@@ -105,7 +105,7 @@ onto a GCP VM.
     <li>Default settings for the rest</li>
 </ol>
 
-<p><b>[Screenshot Placeholder]</b><br>
+<img width="1049" height="505" alt="VM configuration" src="https://github.com/user-attachments/assets/5afd2533-2548-419e-be8f-46b7dbe8aa94" />
 <i>Figure 2: GCP VM instance configuration page</i></p>
 
 <h3>4.2 Firewall Configuration</h3>
@@ -187,7 +187,7 @@ The system is designed to run using three separate terminal sessions on the same
     <li><b>Terminal 3:</b> Sensor Data Simulator (<code>sensor_simulator.py</code>)</li>
 </ul>
 
-<p><b>[Screenshot Placeholder]</b><br>
+<img width="1901" height="436" alt="3VM" src="https://github.com/user-attachments/assets/c75d0fc1-9a10-4fc0-b92b-33ce6095b1aa" />
 <i>Figure 3: Three VM terminal sessions running different system components.</i></p>
 
 <h3>4.5 Data Flow Execution</h3>
