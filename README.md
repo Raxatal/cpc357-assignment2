@@ -115,8 +115,8 @@ The following firewall rules were configured on GCP:
 </p>
 
 <ul>
-    <li><b>allow-flask-5000</b> – Allows access to the Flask web application</li>
-    <li><b>allow-mqtt-1883</b> – Allows MQTT communication</li>
+    <li><b>allow-flask-5000</b> - Allows access to the Flask web application</li>
+    <li><b>allow-mqtt-1883</b> - Allows MQTT communication</li>
 </ul>
 
 <p>
