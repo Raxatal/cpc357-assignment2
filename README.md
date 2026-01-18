@@ -47,7 +47,8 @@ cloud processing, data storage, and application layers.
 </p>
 
 <p>
-    
+<img width="512" height="645" alt="image" src="https://github.com/user-attachments/assets/00ebdf84-bc78-460a-91de-338d83827137" />
+
 <i>Figure 1: High-level system architecture diagram</i>
 </p>
 
