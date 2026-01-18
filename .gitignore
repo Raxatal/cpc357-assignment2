@@ -1,0 +1,17 @@
+# Ignore System/Hidden folders
+.cache/
+.local/
+.ssh/
+.mongodb/
+.bash_history
+.bash_logout
+.bashrc
+.profile
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+
+
+

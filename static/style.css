@@ -1,0 +1,113 @@
+/* Using Roboto for a cleaner look, imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #5c2ca5; /* Using purple as main colour coz usm */
+    color: #ffffff;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 2.2em;
+    margin: 0;
+}
+
+/* Container for the three zone cards */
+.zones-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual zone cards on main index page */
+.zone-box {
+    background-color: #2a2a2a;
+    border: 2px solid #5c2ca5;
+    border-radius: 10px;
+    padding: 20px;
+    width: 28%;
+    min-width: 250px;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.zone-box h3 {
+    margin-top: 0;
+    color: #e0d7f5;
+    font-weight: 700;
+}
+
+.zone-box p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Shared button */
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5c2ca5;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #7d4de5;
+}
+
+footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Detailed Dashboard Layout */
+.zone-container {
+    margin: 30px auto;
+    max-width: 1000px;
+}
+
+.zone-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #e0c3fc;
+}
+
+.charts-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Box for each individual Chart.js canvas */
+.chart-box {
+    flex: 1 1 45%; 
+    min-width: 300px; 
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 10px;
+    height: 350px; /* Fixed height so charts don't collapse */
+}
+
+/* Force canvas to fill the chart box */
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}

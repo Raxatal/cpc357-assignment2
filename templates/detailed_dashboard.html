@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detailed Dashboard - Smart Library Monitoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Detailed Dashboard</h1>
+    </header>
+
+    {% for zone in ['zone1', 'zone2', 'zone3'] %}
+    <div class="zone-container"> <br> <br>
+        <div class="zone-title">{{ zone | capitalize }}</div>
+        <div class="charts-row">
+            <div class="chart-box">
+                <h4>Temperature (°C)</h4>
+                <canvas id="{{ zone }}-temp-chart"></canvas>
+            </div>
+            <div class="chart-box">
+                <h4>Noise (dB)</h4>
+                <canvas id="{{ zone }}-noise-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <footer>
+       <br><br><button onclick="window.location.href='/'">Back to Dashboard</button>
+    </footer>
+
+    <script src="{{ url_for('static', filename='detailed_dashboard.js') }}"></script>
+</body>
+</html>

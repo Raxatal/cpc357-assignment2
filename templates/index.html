@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Library Monitoring System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Smart Library Monitoring System</h1>
+    </header>
+
+    <div class="zones-container">
+        <div class="zone-box" data-zone="zone1">
+            <h3>Zone 1</h3>
+            <p>Temperature: <span class="temp-value">-- °C</span></p>
+            <p>Noise: <span class="noise-value">-- dB</span></p>
+            <button class="notify-btn">Notify Librarian</button>
+            <p>AC Temperature: <span class="ac-temp">24 °C</span></p>
+            <button class="temp-adjust-btn" data-action="up">Temp +</button>
+            <button class="temp-adjust-btn" data-action="down">Temp -</button>
+        </div>
+
+        <div class="zone-box" data-zone="zone2">
+            <h3>Zone 2</h3>
+            <p>Temperature: <span class="temp-value">-- °C</span></p>
+            <p>Noise: <span class="noise-value">-- dB</span></p>
+            <button class="notify-btn">Notify Librarian</button>
+            <p>AC Temperature: <span class="ac-temp">24 °C</span></p>
+            <button class="temp-adjust-btn" data-action="up">Temp +</button>
+            <button class="temp-adjust-btn" data-action="down">Temp -</button>
+        </div>
+
+        <div class="zone-box" data-zone="zone3">
+            <h3>Zone 3</h3>
+            <p>Temperature: <span class="temp-value">-- °C</span></p>
+            <p>Noise: <span class="noise-value">-- dB</span></p>
+            <button class="notify-btn">Notify Librarian</button>
+            <p>AC Temperature: <span class="ac-temp">24 °C</span></p>
+            <button class="temp-adjust-btn" data-action="up">Temp +</button>
+            <button class="temp-adjust-btn" data-action="down">Temp -</button>
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="window.location.href='/dashboard'">View Detailed Dashboard</button>
+    </footer>
+
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>
